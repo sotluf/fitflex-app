@@ -63,8 +63,8 @@ src/
 ### Install
 
 ```bash
-git clone https://github.com/sotluf/fitflex.git
-cd fitflex
+git clone https://github.com/sotluf/fitflex-app.git
+cd fitflex-app
 npm install
 ```
 
@@ -81,7 +81,7 @@ RAPID_API_HOST=your_rapidapi_host
 
 The keys come from a YouTube search API on [RapidAPI](https://rapidapi.com). Without them the app works, but the workout videos do not load.
 
-**2. `android/app/src/main/res/values/firebase.xml`.** Firebase configuration for Android notifications. Create this file with the values from your own Firebase project (Firebase console, Project settings, Android app). You can use `firebase.xml.example` and copy it to `firebase.xml`.
+**2. `android/app/src/main/res/values/firebase.xml`.** Firebase configuration for Android notifications. Create this file with the values from your own Firebase project (Firebase console, Project settings, Android app).
 
 ### Run
 
