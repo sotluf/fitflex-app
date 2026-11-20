@@ -1,0 +1,9 @@
+// replace the code with your own values for use Firebase in a project
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="google_app_id" translatable="false"></string>
+    <string name="google_api_key" translatable="false"></string>
+    <string name="gcm_defaultSenderId" translatable="false"></string>
+    <string name="project_id" translatable="false"></string>
+</resources>

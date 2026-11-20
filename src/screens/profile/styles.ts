@@ -1,0 +1,61 @@
+import EStyleSheet from 'react-native-extended-stylesheet';
+import { common, fonts, radius } from '../../theme';
+
+export const styles = EStyleSheet.create({
+  burger: {
+    position: 'absolute',
+    right: 20,
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    backgroundColor: '$card',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  sheet: common.sheet,
+  header: { paddingHorizontal: 20 },
+  list: { flexGrow: 1, paddingHorizontal: 20, paddingBottom: 32 },
+  name: {
+    fontFamily: fonts.bold,
+    fontSize: 20,
+    color: '$text',
+    textAlign: 'center',
+  },
+  email: {
+    ...common.subtitle,
+    fontSize: 13,
+    textAlign: 'center',
+    marginBottom: 12,
+  },
+  item: {
+    paddingVertical: 14,
+    borderBottomWidth: 1,
+    borderBottomColor: '$ringTrack',
+  },
+  itemText: { fontFamily: fonts.medium, fontSize: 15, color: '$text' },
+  switchRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  langRow: { flexDirection: 'row', gap: 8 },
+  langButton: {
+    paddingHorizontal: 14,
+    paddingVertical: 6,
+    borderRadius: radius.pill,
+    borderWidth: 1,
+    borderColor: '$ringTrack',
+  },
+  langButtonActive: { backgroundColor: '$primary', borderColor: '$primary' },
+  langText: { fontFamily: fonts.semiBold, fontSize: 13, color: '$textMuted' },
+  langTextActive: { color: '$onPrimary' },
+  phone: { ...common.subtitle, fontSize: 13, marginTop: 2 },
+  logoutText: { fontFamily: fonts.bold, fontSize: 15, color: '$danger' },
+  input: common.input,
+  row: { ...common.row, marginBottom: 6 },
+  button: { ...common.button, flex: 1 },
+  buttonText: common.buttonText,
+  grayButton: { ...common.grayButton, flex: 1 },
+  grayButtonText: common.grayButtonText,
+  emptyText: { ...common.emptyText, paddingVertical: 20 },
+});
